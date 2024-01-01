@@ -1,0 +1,155 @@
+/* small screens AND LAPTOPS */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+    .container {
+        margin: 2rem 0; /* Adjusted margin */
+    }
+    .home-left {
+        flex-basis: 80%;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-img img {
+        width: 300px;
+        height: 200px;
+        object-fit: fill;
+    }
+    .home-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* ipads, Tablets */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 11px;
+    }
+    .hide {
+        display: none;
+    }
+    .home-left {
+        flex-basis: 90%;
+    }
+    .home {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image:url("../img/living/image2.jpg");
+        padding: 2rem;
+    }
+    .home-left p {
+        color: var(--primary-white-color);
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-img img {
+        width: 300px;
+        height: 220px;
+        object-fit: fill;
+    }
+    .home-right img {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .hanburger{
+        font-size: 2rem; 
+        display:flex;
+        align-items: center;  
+    }
+    body {
+        background-image: url('../img/living room.webp'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+
+    }
+
+}
+
+/* mobile devices */
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 10px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home-left {
+        flex-basis: 100%;
+    }
+    .container {
+        margin: 1rem; 
+    }
+    .card-img img {
+        width: 180px;
+        height: 130px;
+        object-fit: fill;
+    }
+    .home-right {
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-right img {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .hanburger{
+        font-size: 2rem; 
+        display:flex;
+        align-items: center;  
+    }
+
+    body {
+        background-image: url('../img/living room.webp'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .apartments-head h2 {
+        font-size: 1.2rem;
+    }
+    .card-img img {
+        width: 150px;
+        height: 100px;
+        object-fit: fill;
+    }
+    .home-right {
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-right img {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .hanburger{
+        font-size: 2rem; 
+        display:flex;
+        align-items: center;  
+    }
+
+    body {
+        background-image: url('../img/living room.webp'); /* URL to your background image */
+        background-size: cover; /* Adjust the background size as needed */
+        background-repeat: no-repeat; /* Prevent background image from repeating */
+        background-attachment: fixed; /* Keep the background fixed */
+
+    }
+}
